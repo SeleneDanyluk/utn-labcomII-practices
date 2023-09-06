@@ -3,6 +3,26 @@
     background-color: rgb(245, 245, 245);
 }
 
+.img-background {
+    position: relative; /* Establece el contexto de posicionamiento relativo */
+}
+
+.img-background h1 {
+    position: absolute; /* Establece el posicionamiento absoluto para el título */
+    top: 50%; /* Alinea el título en la mitad superior del contenedor */
+    left: 50%; /* Alinea el título en el centro horizontal del contenedor */
+    transform: translate(-50%, -50%); /* Centra el título completamente */
+    z-index: 1; /* Coloca el título delante de la imagen */
+    background-color: rgba(255, 255, 255, 0.7); /* Opcional: Agrega un fondo semitransparente al título */
+    padding: 10px; /* Opcional: Agrega espacio alrededor del título */
+}
+
+.img-background img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+}
+
+
 h1 {
     font-size: 24px;
     color: #242424;
@@ -35,7 +55,7 @@ ul li {
     padding: 10px;
 }
 
-ul li:hover{
+ul li:hover {
     background-color: hsla(328, 100%, 54%, 0.10);
 }
 
@@ -44,7 +64,8 @@ ul li>a {
     text-decoration: underline n;
 }
 
-.item10, .item10>a {
+.item10,
+.item10>a {
     color: green;
 }
 
@@ -52,4 +73,3 @@ a {
     font-weight: bold;
     background-color: #24242400;
 }
-
